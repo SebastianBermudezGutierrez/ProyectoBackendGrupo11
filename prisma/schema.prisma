@@ -1,0 +1,93 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+model Profile {
+  id          String       @id @default(uuid())
+  userId      String    
+  name        String
+  lastName    String
+  email       String    
+  phone       String?
+  bio         String?
+  avatarUrl   String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt()
+}
+
+model Ride {
+  id            String   @id @default(uuid())
+  driverId      String
+  origin        String
+  destination   String
+  date          DateTime
+  time          String
+  seats         Int
+  availableSeats Int
+  active    Boolean  @default(true)
+  createdAt     DateTime @default(now())
+}
+
+model Booking {
+  id         String   @id @default(uuid())
+  userId     String
+  rideId     String
+  active Boolean @default(true)
+  createdAt  DateTime @default(now())
+}
+
+model Vehicle {
+  id          String   @id @default(uuid())
+  driverId    String
+  brand       String
+  model       String
+  plate       String   
+  color       String?
+  createdAt   DateTime @default(now())
+}
+
+model Campus {
+  id          String   @id @default(uuid())
+  name        String
+  address     String
+  city        String
+  createdAt   DateTime @default(now())
+}
+
+model Review {
+  id         String   @id @default(uuid())
+  rideId     String
+  reviewerId String
+  rating     Int
+  comment    String?
+  createdAt  DateTime @default(now())
+}
+
+model Notification {
+  id         String   @id @default(uuid())
+  profileId  String
+  title      String
+  message    String
+  isRead     Boolean  @default(true)
+  createdAt  DateTime @default(now())
+}
+
+model Message {
+  id         String      @id @default(uuid())
+  senderId   Int
+  receiverId Int
+  content    String
+  createdAt DateTime @default(now())
+}
