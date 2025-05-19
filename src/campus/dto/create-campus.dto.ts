@@ -1,4 +1,4 @@
-import { IsOptional, IsString } from "class-validator"
+import {  IsString } from "class-validator"
 
 export class CreateCampusDto {
   @IsString()
@@ -7,7 +7,6 @@ export class CreateCampusDto {
   address   : string;
   @IsString()
   city      : string;
-  @IsOptional()
   @IsString()
-  image?: string;
+  image: string;
 }
