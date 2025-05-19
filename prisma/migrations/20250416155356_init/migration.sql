@@ -5,6 +5,7 @@ CREATE TABLE "Booking" (
     "userId" TEXT NOT NULL,
     "rideId" TEXT NOT NULL,
     "active" BOOLEAN NOT NULL DEFAULT true,
+    "image" TEXT,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
     CONSTRAINT "Booking_pkey" PRIMARY KEY ("id")

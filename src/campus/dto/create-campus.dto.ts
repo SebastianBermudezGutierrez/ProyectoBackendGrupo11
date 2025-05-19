@@ -7,4 +7,6 @@ export class CreateCampusDto {
   address   : string;
   @IsString()
   city      : string;
+  @IsString()
+  image: string;
 }

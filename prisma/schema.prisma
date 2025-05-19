@@ -63,6 +63,7 @@ model Campus {
   name        String
   address     String
   city        String
+  image       String?
   createdAt   DateTime @default(now())
 }
 
