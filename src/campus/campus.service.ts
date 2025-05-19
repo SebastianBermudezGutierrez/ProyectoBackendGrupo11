@@ -6,9 +6,6 @@ import { UploaderService } from 'src/services/Uploader/s3.service';
 
 @Injectable()
 export class CampusService extends PrismaClient implements OnModuleInit{
-  findOne(id: string) {
-    throw new Error('Method not implemented.');
-  }
   constructor(private readonly uploaderService: UploaderService) {
     super();
    }
@@ -26,7 +23,7 @@ export class CampusService extends PrismaClient implements OnModuleInit{
      await this.uploaderService.upload(image, campus.image);
   }
 
-  indOne(id: string) {
+  findOne(id: string) {
     return this.campus.findFirst({ where: { id } });
   }
 
