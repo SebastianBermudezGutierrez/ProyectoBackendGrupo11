@@ -85,11 +85,15 @@ ProyectoBackendGrupo11/
 
  Integración con Docker y Docker Compose.
 
- Implementación de módulos para gestión de usuarios y viajes.
+ Asociar viajes a un campus de origen/destino.
 
- Autenticación y autorización de usuarios.
+ Rol de usuario: distinguir entre conductores y pasajeros.
 
- Pruebas unitarias y de integración.
+ Historial de viajes por usuario.
+ 
+ Sistema de puntuación promedio por conductor.
+
+ Sistema de confirmación de asistencia al viaje.
 
 ## Desarrolladores
 Sebastián Bermúdez Gutiérrez- Diego Fernando - https://github.com/SebastianBermudezGutierrez/ProyectoBackendGrupo11.git
