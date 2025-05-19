@@ -4,6 +4,6 @@ import { CampusController } from './campus.controller';
 
 @Module({
   controllers: [CampusController],
-  providers: [CampusService],
+  providers: [CampusService, ],
 })
 export class CampusModule {}

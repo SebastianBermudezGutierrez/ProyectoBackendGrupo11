@@ -22,9 +22,9 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## ## 📋 Descripción del Proyecto
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Este proyecto es una aplicación principalmente de un backend desarrollado con NestJS con el fin de utilizar y reforzar el aprendizaje al entendimiento de los conceptos aprendidos y vistos en clase.
 
 ## Configuracion del proyecto
 
@@ -35,6 +35,10 @@ $ npm install
 ## Compilar y ejecutar el proyecto
 
 ```bash
+
+# Ejecutar migraciones de base de datos
+$ npx prisma migrate dev
+
 # desarrollo
 $ npm run start
 
@@ -86,20 +90,6 @@ ProyectoBackendGrupo11/
  Autenticación y autorización de usuarios.
 
  Pruebas unitarias y de integración.
-
-## Contribuciones
-
-Las contribuciones son bienvenidas. Por favor, sigue los siguientes pasos:
-
-Haz un fork del repositorio.
-
-Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
-
-Realiza tus cambios y haz commit (git commit -am 'Agrega nueva funcionalidad').
-
-Haz push a la rama (git push origin feature/nueva-funcionalidad).
-
-Abre un Pull Request.
 
 ## Desarrolladores
 Sebastián Bermúdez Gutiérrez- Diego Fernando - https://github.com/SebastianBermudezGutierrez/ProyectoBackendGrupo11.git
