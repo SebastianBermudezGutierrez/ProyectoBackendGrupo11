@@ -26,26 +26,26 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## Project setup
+## Configuracion del proyecto
 
 ```bash
 $ npm install
 ```
 
-## Compile and run the project
+## Compilar y ejecutar el proyecto
 
 ```bash
-# development
+# desarrollo
 $ npm run start
 
-# watch mode
+# modo de vigilancia
 $ npm run start:dev
 
-# production mode
+# modo de produccion
 $ npm run start:prod
 ```
 
-## Run tests
+## Ejecutar pruebas
 
 ```bash
 # unit tests
@@ -58,45 +58,54 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Deployment
-
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
-
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+##  Estructura del proyecto
 
 ```bash
-$ npm install -g mau
-$ mau deploy
+ProyectoBackendGrupo11/
+├── prisma/                # Esquema y migraciones de Prisma
+├── src/                   # Código fuente de la aplicación
+│   ├── modules/           # Módulos de la aplicación
+│   ├── main.ts            # Punto de entrada de la aplicación
+│   └── ...                # Otros archivos y carpetas
+├── test/                  # Pruebas unitarias y de integración
+├── .env                   # Variables de entorno
+├── docker-compose.yml     # Configuración de Docker Compose
+├── Dockerfile             # Configuración de Docker
+├── package.json           # Dependencias y scripts de npm
+└── README.md              # Documentación del proyecto
+
 ```
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+## Estado del proyecto
+ Configuración inicial del proyecto con NestJS y Prisma.
 
-## Resources
+ Integración con Docker y Docker Compose.
 
-Check out a few resources that may come in handy when working with NestJS:
+ Implementación de módulos para gestión de usuarios y viajes.
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+ Autenticación y autorización de usuarios.
 
-## Support
+ Pruebas unitarias y de integración.
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+## Contribuciones
 
-## Stay in touch
+Las contribuciones son bienvenidas. Por favor, sigue los siguientes pasos:
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+Haz un fork del repositorio.
 
-## License
+Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+Realiza tus cambios y haz commit (git commit -am 'Agrega nueva funcionalidad').
+
+Haz push a la rama (git push origin feature/nueva-funcionalidad).
+
+Abre un Pull Request.
+
+## Desarrolladores
+Sebastián Bermúdez Gutiérrez- Diego Fernando - https://github.com/SebastianBermudezGutierrez/ProyectoBackendGrupo11.git
+
+Grupo 11 - Universidad [Corhuila]
+
 =======
 # ProyectoBackendGrupo11
 >>>>>>> da572747c11079c33c2f6e61d1a34b34c11070ce
